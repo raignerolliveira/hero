@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* container-principal */
+.game-container{
+    display: grid;
+    /* 4 colunas iguais e 3 linhas específicas */
+    grid-template-columns: (4, 1fr);
+    grid-template-rows: 180px 180px 120px;
+    gap: 20px;
+    width: 90%;
+    max-width: 1000px;
+    padding: 20px;
+}
+/* Area do heroi em destaque */
+.hero-main{
+    grid-column: 1/3; /*começa na linha 1 e vai até a linha 3 (ocupa 2 colunas) */
+    grid-row: 1/3; /*começa na linha 1 e vai até a linha 3 (ocupa 2 linhas) */
+    background-image: linear-gradient(45deg, #1a1a2e, #16213e), url('https://images.unsplash.com/photo-1614850523296-d8c1af93d400?w=600');
+    background-blend-mode: overlay;
+    background-size: cover;
+    border: solid 1px #00f2ff;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    box-shadow: 0 0 20px rgba(0, 242, 255, 0.2);
+ 
+}
